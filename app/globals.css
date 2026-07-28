@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --font-serif: var(--font-cinzel), Georgia, serif;
+    --font-sans: var(--font-plus-jakarta), system-ui, sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Custom Gold Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF1BF 0%, #D4AF37 40%, #AA771C 75%, #FBF5B7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-metallic {
+  background: linear-gradient(90deg, #F3E5AB 0%, #D4AF37 30%, #F5D77F 50%, #B8860B 80%, #FFE8A3 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s linear infinite;
+}
+
+/* Gold Gradient Borders */
+.border-gold-gradient {
+  border-image: linear-gradient(135deg, #D4AF37 0%, #AA771C 50%, #FBF5B7 100%) 1;
+}
+
+.bg-gold-metallic {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFDF00 25%, #AA771C 60%, #FDF6C7 85%, #8B6508 100%);
+}
+
+.bg-gold-metallic-hover {
+  background: linear-gradient(135deg, #E5BE38 0%, #FFF066 30%, #C48E22 70%, #FFFFD9 100%);
+}
+
+/* Glassmorphism Royal Cards */
+.royal-glass-card {
+  background: rgba(18, 19, 28, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 230, 150, 0.15);
+}
+
+.royal-glass-card:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+/* Keyframes */
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s infinite ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0C10;
+}
+::-webkit-scrollbar-thumb {
+  background: #3A2F17;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
 }
