@@ -26,17 +26,17 @@ const TESTIMONIALS = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-24 bg-[#0E0F17] relative overflow-hidden border-t border-amber-500/15">
+    <section className="py-24 bg-[#F3EFE9] dark:bg-[#0E0F17] text-neutral-900 dark:text-amber-50 relative overflow-hidden border-t border-amber-500/15 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/30 text-amber-300 text-xs font-serif uppercase tracking-widest">
-            <Crown className="w-3.5 h-3.5 text-amber-400" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 dark:bg-amber-950/60 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-serif uppercase tracking-widest">
+            <Crown className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
             <span>Patron Testimonials</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-white">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-neutral-900 dark:text-white">
             Words of Distinction from <span className="text-gold-metallic">Our Royal Guests</span>
           </h2>
         </div>
@@ -57,14 +57,14 @@ export default function TestimonialsSection() {
                   ))}
                 </div>
 
-                <p className="text-xs sm:text-sm text-amber-100/80 font-light leading-relaxed italic">
+                <p className="text-xs sm:text-sm text-neutral-700 dark:text-amber-100/80 font-light leading-relaxed italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
               </div>
 
               <div className="pt-6 mt-6 border-t border-amber-500/20">
                 <h4 className="font-serif font-bold text-sm text-gold-metallic">{t.author}</h4>
-                <p className="text-[11px] text-amber-200/60 font-sans">{t.location} • <span className="text-amber-400">{t.event}</span></p>
+                <p className="text-[11px] text-neutral-500 dark:text-amber-200/60 font-sans">{t.location} • <span className="text-amber-700 dark:text-amber-400">{t.event}</span></p>
               </div>
             </div>
           ))}

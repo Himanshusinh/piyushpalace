@@ -48,7 +48,7 @@ const AMENITIES = [
 
 export default function AmenitiesGrid() {
   return (
-    <section id="amenities" className="py-24 bg-[#0B0C10] relative overflow-hidden border-t border-amber-500/15">
+    <section id="amenities" className="py-24 bg-[#FAF8F5] dark:bg-[#0B0C10] text-neutral-900 dark:text-amber-50 relative overflow-hidden border-t border-amber-500/15 transition-colors duration-500">
       {/* Background Radial Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-amber-600/5 rounded-full filter blur-[160px] pointer-events-none" />
 
@@ -56,16 +56,16 @@ export default function AmenitiesGrid() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/30 text-amber-300 text-xs font-serif uppercase tracking-widest">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 dark:bg-amber-950/60 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-serif uppercase tracking-widest">
+            <Sparkles className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
             <span>Resort Leisure & Facilities</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-white">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-neutral-900 dark:text-white">
             World-Class Amenities for an <span className="text-gold-metallic">Exquisite Stay</span>
           </h2>
 
-          <p className="text-base text-amber-100/70 font-light leading-relaxed">
+          <p className="text-base text-neutral-700 dark:text-amber-100/70 font-light leading-relaxed">
             Whether staying for a weekend retreat or attending a grand wedding celebration, enjoy our comprehensive range of luxury resort facilities.
           </p>
         </div>
@@ -82,10 +82,10 @@ export default function AmenitiesGrid() {
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400/20 to-amber-700/20 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-4 group-hover:scale-110 transition-transform">
                   <Icon className="w-6 h-6" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-amber-200 group-hover:text-amber-300 transition-colors">
+                <h3 className="font-serif text-lg font-bold text-neutral-950 dark:text-amber-200 group-hover:text-amber-700 dark:group-hover:text-amber-300 transition-colors">
                   {amenity.title}
                 </h3>
-                <p className="text-xs text-amber-100/70 font-light mt-2 leading-relaxed">
+                <p className="text-xs text-neutral-600 dark:text-amber-100/70 font-light mt-2 leading-relaxed">
                   {amenity.description}
                 </p>
               </div>

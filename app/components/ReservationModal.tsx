@@ -42,29 +42,29 @@ export default function ReservationModal({ isOpen, onClose, initialData }: Reser
 
         {/* Modal Header */}
         <div className="flex items-center gap-2 mb-2">
-          <Crown className="w-5 h-5 text-amber-400" />
-          <span className="text-xs uppercase font-serif tracking-widest text-amber-400 font-semibold">
+          <Crown className="w-5 h-5 text-amber-500" />
+          <span className="text-xs uppercase font-serif tracking-widest text-amber-700 dark:text-amber-400 font-semibold">
             Piyush Palace Concierge
           </span>
         </div>
 
-        <h3 className="font-serif text-2xl font-bold text-white">
+        <h3 className="font-serif text-2xl font-bold text-neutral-950 dark:text-white">
           Reserve Estate or Check Rates
         </h3>
-        <p className="text-xs text-amber-100/70 mt-1 mb-6 font-light">
+        <p className="text-xs text-neutral-700 dark:text-amber-100/70 mt-1 mb-6 font-light">
           Submit your dates & details to receive immediate availability confirmation and tailored royal packages.
         </p>
 
         {submitted ? (
           <div className="py-8 text-center space-y-4">
-            <div className="w-14 h-14 rounded-full bg-amber-500/20 border border-amber-400 flex items-center justify-center mx-auto text-amber-400">
+            <div className="w-14 h-14 rounded-full bg-amber-500/20 border border-amber-400 flex items-center justify-center mx-auto text-amber-605">
               <CheckCircle2 className="w-8 h-8" />
             </div>
             <h4 className="font-serif text-xl font-bold text-gold-metallic">
               Reservation Inquiry Submitted
             </h4>
-            <p className="text-xs text-amber-100/80 max-w-sm mx-auto leading-relaxed">
-              Thank you! Our estate desk at Piyush Palace will reach out directly on <strong className="text-amber-300">{formData.phone}</strong>.
+            <p className="text-xs text-neutral-750 dark:text-amber-100/80 max-w-sm mx-auto leading-relaxed">
+              Thank you! Our estate desk at Piyush Palace will reach out directly on <strong className="text-amber-700 dark:text-amber-300">{formData.phone}</strong>.
             </p>
             <button
               onClick={() => {
@@ -79,7 +79,7 @@ export default function ReservationModal({ isOpen, onClose, initialData }: Reser
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+              <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-705 mb-1">
                 Your Full Name *
               </label>
               <input
@@ -88,13 +88,13 @@ export default function ReservationModal({ isOpen, onClose, initialData }: Reser
                 placeholder="e.g. Maharani Meera / Rajesh Sharma"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-amber-100 focus:outline-none focus:border-amber-400"
+                className="w-full bg-white dark:bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 placeholder:text-neutral-400 dark:placeholder:text-amber-100/30"
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+                <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-705 mb-1">
                   Mobile / WhatsApp *
                 </label>
                 <input
@@ -103,42 +103,42 @@ export default function ReservationModal({ isOpen, onClose, initialData }: Reser
                   placeholder="+91 98795 24500"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-amber-100 focus:outline-none focus:border-amber-400"
+                  className="w-full bg-white dark:bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 placeholder:text-neutral-400 dark:placeholder:text-amber-100/30"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+                <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-705 mb-1">
                   Booking Type
                 </label>
                 <select
                   value={formData.category}
                   onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                  className="w-full bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-amber-100 focus:outline-none focus:border-amber-400 cursor-pointer"
+                  className="w-full bg-white dark:bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 cursor-pointer"
                 >
-                  <option value="Royal Wedding" className="bg-neutral-900">Royal Wedding & Reception</option>
-                  <option value="Resort Suite Stay" className="bg-neutral-900">Luxury Suite Accommodation</option>
-                  <option value="Corporate Event" className="bg-neutral-900">Corporate Summit / Seminar</option>
-                  <option value="Private Banquet" className="bg-neutral-900">Private Celebration / Sangeet</option>
+                  <option value="Royal Wedding" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">Royal Wedding & Reception</option>
+                  <option value="Resort Suite Stay" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">Luxury Suite Accommodation</option>
+                  <option value="Corporate Event" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">Corporate Summit / Seminar</option>
+                  <option value="Private Banquet" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">Private Celebration / Sangeet</option>
                 </select>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+                <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-705 mb-1">
                   Target Date
                 </label>
                 <input
                   type="date"
                   value={formData.checkIn}
                   onChange={(e) => setFormData({ ...formData, checkIn: e.target.value })}
-                  className="w-full bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-amber-100 focus:outline-none focus:border-amber-400 cursor-pointer"
+                  className="w-full bg-white dark:bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 cursor-pointer"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+                <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-705 mb-1">
                   Guests Capacity
                 </label>
                 <input
@@ -146,13 +146,13 @@ export default function ReservationModal({ isOpen, onClose, initialData }: Reser
                   placeholder="e.g. 500 Guests"
                   value={formData.guests}
                   onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                  className="w-full bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-amber-100 focus:outline-none focus:border-amber-400"
+                  className="w-full bg-white dark:bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+              <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-705 mb-1">
                 Special Requests
               </label>
               <textarea
@@ -160,7 +160,7 @@ export default function ReservationModal({ isOpen, onClose, initialData }: Reser
                 placeholder="Mention any specific room preferences, pure-veg catering requirements, or wedding stage preferences..."
                 value={formData.notes}
                 onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                className="w-full bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-amber-100 focus:outline-none focus:border-amber-400"
+                className="w-full bg-white dark:bg-black/60 border border-amber-500/30 rounded-xl px-4 py-2.5 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 placeholder:text-neutral-400 dark:placeholder:text-amber-100/30"
               />
             </div>
 

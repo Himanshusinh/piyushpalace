@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
   :root {
@@ -45,16 +46,59 @@
 
 /* Glassmorphism Royal Cards */
 .royal-glass-card {
-  background: rgba(18, 19, 28, 0.75);
+  background: rgba(18, 19, 28, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(212, 175, 55, 0.22);
+  border: 1px solid rgba(212, 175, 55, 0.25);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 230, 150, 0.15);
 }
 
 .royal-glass-card:hover {
-  border-color: rgba(212, 175, 55, 0.5);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.55);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
+.royal-dark-glass-card {
+  background: rgba(18, 19, 28, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(212, 175, 55, 0.25) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 230, 150, 0.15) !important;
+  color: #FFECA1 !important;
+}
+
+.royal-dark-glass-card:hover {
+  border-color: rgba(212, 175, 55, 0.55) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.2) !important;
+}
+
+/* Light Mode Overrides */
+html.light {
+  color-scheme: light;
+}
+
+html.light body {
+  background-color: #FAF8F5;
+  color: #1A1815;
+}
+
+html.light .royal-glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(184, 134, 11, 0.25);
+  box-shadow: 0 15px 40px rgba(184, 134, 11, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  color: #1A1815;
+}
+
+html.light .royal-glass-card:hover {
+  border-color: rgba(184, 134, 11, 0.5);
+  box-shadow: 0 20px 50px rgba(184, 134, 11, 0.15), 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+html.light .text-gold-metallic {
+  background: linear-gradient(90deg, #8B6508 0%, #B8860B 30%, #D4AF37 50%, #996515 80%, #B8860B 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Keyframes */
@@ -86,9 +130,15 @@
 ::-webkit-scrollbar-track {
   background: #0B0C10;
 }
+html.light ::-webkit-scrollbar-track {
+  background: #F3EFEA;
+}
 ::-webkit-scrollbar-thumb {
   background: #3A2F17;
   border-radius: 4px;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #C5A046;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #D4AF37;

@@ -44,7 +44,7 @@ export default function LocationContactSection() {
   };
 
   return (
-    <section id="location" className="py-24 bg-[#0B0C10] relative overflow-hidden border-t border-amber-500/15">
+    <section id="location" className="py-24 bg-[#FAF8F5] dark:bg-[#0B0C10] text-neutral-900 dark:text-amber-50 relative overflow-hidden border-t border-amber-500/15 transition-colors duration-500">
       {/* Background Radial Glow */}
       <div className="absolute top-1/3 right-0 w-96 h-96 bg-amber-500/5 rounded-full filter blur-[120px] pointer-events-none" />
 
@@ -52,16 +52,16 @@ export default function LocationContactSection() {
         
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/30 text-amber-300 text-xs font-serif uppercase tracking-widest">
-            <MapPin className="w-3.5 h-3.5 text-amber-400" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 dark:bg-amber-950/60 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-serif uppercase tracking-widest">
+            <MapPin className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
             <span>Estate Location & Concierge</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-white">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-neutral-900 dark:text-white">
             Plan Your Visit to <span className="text-gold-metallic">Piyush Palace</span>
           </h2>
 
-          <p className="text-base text-amber-100/70 font-light leading-relaxed">
+          <p className="text-base text-neutral-700 dark:text-amber-100/70 font-light leading-relaxed">
             Reach out to our royal concierge team to schedule a personal site visit, request wedding packages, or book resort accommodations.
           </p>
         </div>
@@ -74,17 +74,17 @@ export default function LocationContactSection() {
             {/* Address Card */}
             <div className="royal-glass-card p-6 rounded-3xl border border-amber-500/25 space-y-4">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-450 shrink-0">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-lg font-bold text-amber-200">Resort & Venue Address</h3>
-                  <p className="text-xs text-amber-100/80 mt-1 leading-relaxed">
+                  <h3 className="font-serif text-lg font-bold text-neutral-950 dark:text-amber-200">Resort & Venue Address</h3>
+                  <p className="text-xs text-neutral-750 dark:text-amber-100/80 mt-1 leading-relaxed">
                     Piyush Palace Hotel & Resort<br />
                     Village Goblej, Ahmedabad-Kheda Highway (NH-8),<br />
                     Kheda District, Gujarat 387550, India
                   </p>
-                  <span className="inline-block mt-2 text-[11px] text-amber-400 font-serif font-semibold">
+                  <span className="inline-block mt-2 text-[11px] text-amber-700 dark:text-amber-400 font-serif font-semibold">
                     📍 35 km from Ahmedabad City Center
                   </span>
                 </div>
@@ -94,17 +94,17 @@ export default function LocationContactSection() {
             {/* Direct Lines */}
             <div className="royal-glass-card p-6 rounded-3xl border border-amber-500/25 space-y-4">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-450 shrink-0">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-lg font-bold text-amber-200">Direct Reservations Line</h3>
-                  <div className="mt-2 space-y-1 text-xs text-amber-100/90 font-medium">
+                  <h3 className="font-serif text-lg font-bold text-neutral-950 dark:text-amber-200">Direct Reservations Line</h3>
+                  <div className="mt-2 space-y-1 text-xs text-neutral-750 dark:text-amber-100/90 font-medium">
                     <p className="flex items-center gap-2">
-                      <span className="text-amber-400 font-serif">Front Desk:</span> +91 98795 24500
+                      <span className="text-amber-700 dark:text-amber-400 font-serif">Front Desk:</span> +91 98795 24500
                     </p>
                     <p className="flex items-center gap-2">
-                      <span className="text-amber-400 font-serif">Wedding Desk:</span> +91 98250 12345
+                      <span className="text-amber-700 dark:text-amber-400 font-serif">Wedding Desk:</span> +91 98250 12345
                     </p>
                   </div>
                 </div>
@@ -114,12 +114,12 @@ export default function LocationContactSection() {
             {/* Timings & Email */}
             <div className="royal-glass-card p-6 rounded-3xl border border-amber-500/25 space-y-4">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-450 shrink-0">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-lg font-bold text-amber-200">Concierge Desk</h3>
-                  <p className="text-xs text-amber-100/80 mt-1">
+                  <h3 className="font-serif text-lg font-bold text-neutral-950 dark:text-amber-200">Concierge Desk</h3>
+                  <p className="text-xs text-neutral-750 dark:text-amber-100/80 mt-1">
                     Email: concierge@piyushpalace.co.in<br />
                     Resort Desk: Open 24 Hours / 7 Days
                   </p>
@@ -131,16 +131,16 @@ export default function LocationContactSection() {
             <div className="space-y-3 pt-4">
               <h3 className="font-serif text-lg font-bold text-gold-metallic">Frequently Asked Questions</h3>
               {FAQS.map((faq, idx) => (
-                <div key={idx} className="bg-black/50 border border-amber-500/20 rounded-xl overflow-hidden">
+                <div key={idx} className="bg-white dark:bg-black/50 border border-amber-500/20 rounded-xl overflow-hidden">
                   <button
                     onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                    className="w-full p-4 text-left font-serif text-xs font-semibold text-amber-200 flex justify-between items-center gap-2 hover:text-amber-300"
+                    className="w-full p-4 text-left font-serif text-xs font-semibold text-neutral-950 dark:text-amber-200 flex justify-between items-center gap-2 hover:text-amber-700 dark:hover:text-amber-300"
                   >
                     <span>{faq.q}</span>
-                    <ChevronDown className={`w-4 h-4 text-amber-400 transition-transform ${openFaq === idx ? "rotate-180" : ""}`} />
+                    <ChevronDown className={`w-4 h-4 text-amber-550 transition-transform ${openFaq === idx ? "rotate-180" : ""}`} />
                   </button>
                   {openFaq === idx && (
-                    <div className="px-4 pb-4 text-xs text-amber-100/70 font-sans leading-relaxed border-t border-amber-500/10 pt-2">
+                    <div className="px-4 pb-4 text-xs text-neutral-700 dark:text-amber-100/70 font-sans leading-relaxed border-t border-amber-500/10 pt-2">
                       {faq.a}
                     </div>
                   )}
@@ -155,27 +155,27 @@ export default function LocationContactSection() {
             <div className="royal-glass-card p-8 sm:p-10 rounded-3xl border border-amber-500/30 shadow-2xl backdrop-blur-2xl">
               
               <div className="mb-8">
-                <span className="text-xs uppercase font-serif tracking-widest text-amber-400 font-semibold">
+                <span className="text-xs uppercase font-serif tracking-widest text-amber-700 dark:text-amber-400 font-semibold">
                   Royal Concierge Inquiry
                 </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-neutral-950 dark:text-white mt-1">
                   Request Proposals & Booking Details
                 </h3>
-                <p className="text-xs text-amber-100/70 mt-2 font-light">
+                <p className="text-xs text-neutral-750 dark:text-amber-100/70 mt-2 font-light">
                   Fill in your requirements below and our estate manager will contact you within 2 hours.
                 </p>
               </div>
 
               {submitted ? (
-                <div className="p-8 rounded-2xl bg-amber-950/60 border border-amber-500/40 text-center space-y-4 animate-fade-in">
-                  <div className="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-400 flex items-center justify-center mx-auto text-amber-400">
+                <div className="p-8 rounded-2xl bg-amber-500/5 dark:bg-amber-950/60 border border-amber-500/30 text-center space-y-4 animate-fade-in">
+                  <div className="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-400 flex items-center justify-center mx-auto text-amber-600 dark:text-amber-400">
                     <CheckCircle2 className="w-10 h-10" />
                   </div>
                   <h4 className="font-serif text-2xl font-bold text-gold-metallic">
                     Inquiry Received with Distinction
                   </h4>
-                  <p className="text-xs text-amber-100/80 leading-relaxed max-w-md mx-auto">
-                    Thank you, <strong className="text-amber-300">{formData.name}</strong>. Our royal concierge team at Piyush Palace will contact you shortly on {formData.phone || "your number"}.
+                  <p className="text-xs text-neutral-750 dark:text-amber-100/80 leading-relaxed max-w-md mx-auto">
+                    Thank you, <strong className="text-amber-700 dark:text-amber-300">{formData.name}</strong>. Our royal concierge team at Piyush Palace will contact you shortly on {formData.phone || "your number"}.
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
@@ -188,7 +188,7 @@ export default function LocationContactSection() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+                      <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-700 dark:text-amber-300 mb-1">
                         Full Name *
                       </label>
                       <input
@@ -197,12 +197,12 @@ export default function LocationContactSection() {
                         placeholder="e.g. Vikramaditya Singh"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-amber-100 focus:outline-none focus:border-amber-400 placeholder:text-amber-100/30"
+                        className="w-full bg-white dark:bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 placeholder:text-neutral-400 dark:placeholder:text-amber-100/30"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+                      <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-700 dark:text-amber-300 mb-1">
                         Mobile Phone / WhatsApp *
                       </label>
                       <input
@@ -211,59 +211,59 @@ export default function LocationContactSection() {
                         placeholder="+91 98765 43210"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-amber-100 focus:outline-none focus:border-amber-400 placeholder:text-amber-100/30"
+                        className="w-full bg-white dark:bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 placeholder:text-neutral-400 dark:placeholder:text-amber-100/30"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div>
-                      <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+                      <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-700 dark:text-amber-300 mb-1">
                         Inquiry Category
                       </label>
                       <select
                         value={formData.eventType}
                         onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
-                        className="w-full bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-amber-100 focus:outline-none focus:border-amber-400 cursor-pointer"
+                        className="w-full bg-white dark:bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 cursor-pointer"
                       >
-                        <option value="Royal Wedding" className="bg-neutral-900">Royal Wedding & Reception</option>
-                        <option value="Suite Stay" className="bg-neutral-900">Luxury Suite Stay</option>
-                        <option value="Sangeet" className="bg-neutral-900">Sangeet / Mehendi</option>
-                        <option value="Corporate" className="bg-neutral-900">Corporate Seminar</option>
+                        <option value="Royal Wedding" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">Royal Wedding & Reception</option>
+                        <option value="Suite Stay" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">Luxury Suite Stay</option>
+                        <option value="Sangeet" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">Sangeet / Mehendi</option>
+                        <option value="Corporate" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">Corporate Seminar</option>
                       </select>
                     </div>
 
                     <div>
-                      <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+                      <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-700 dark:text-amber-300 mb-1">
                         Guests Count
                       </label>
                       <select
                         value={formData.guests}
                         onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                        className="w-full bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-amber-100 focus:outline-none focus:border-amber-400 cursor-pointer"
+                        className="w-full bg-white dark:bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 cursor-pointer"
                       >
-                        <option value="Resort Stay (1-4)" className="bg-neutral-900">1 - 4 Guests (Resort Stay)</option>
-                        <option value="50-200" className="bg-neutral-900">50 - 200 Guests</option>
-                        <option value="200-1000" className="bg-neutral-900">200 - 1,000 Guests</option>
-                        <option value="1000-5000" className="bg-neutral-900">1,000 - 5,000 Guests</option>
+                        <option value="Resort Stay (1-4)" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">1 - 4 Guests (Resort Stay)</option>
+                        <option value="50-200" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">50 - 200 Guests</option>
+                        <option value="200-1000" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">200 - 1,000 Guests</option>
+                        <option value="1000-5000" className="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-amber-100">1,000 - 5,000 Guests</option>
                       </select>
                     </div>
 
                     <div>
-                      <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+                      <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-700 dark:text-amber-300 mb-1">
                         Target Date
                       </label>
                       <input
                         type="date"
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                        className="w-full bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-amber-100 focus:outline-none focus:border-amber-400 cursor-pointer"
+                        className="w-full bg-white dark:bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 cursor-pointer"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-300 mb-1">
+                    <label className="block text-[11px] font-serif uppercase tracking-wider text-amber-700 dark:text-amber-300 mb-1">
                       Special Requirements or Message
                     </label>
                     <textarea
@@ -271,7 +271,7 @@ export default function LocationContactSection() {
                       placeholder="Specify your wedding dates, catering preferences, or accommodation needs..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-amber-100 focus:outline-none focus:border-amber-400 placeholder:text-amber-100/30"
+                      className="w-full bg-white dark:bg-black/60 border border-amber-500/25 rounded-xl px-4 py-3 text-xs text-neutral-900 dark:text-amber-100 focus:outline-none focus:border-amber-400 placeholder:text-neutral-400 dark:placeholder:text-amber-100/30"
                     />
                   </div>
 

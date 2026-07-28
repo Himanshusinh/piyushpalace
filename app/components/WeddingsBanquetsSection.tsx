@@ -39,7 +39,7 @@ export default function WeddingsBanquetsSection({ onOpenBookingWithData, onOpenB
   const recommendation = getVenueRecommendation(guestCount);
 
   return (
-    <section id="weddings" className="py-24 bg-[#0E0F17] relative overflow-hidden border-t border-amber-500/15">
+    <section id="weddings" className="py-24 bg-[#F3EFE9] dark:bg-[#0E0F17] text-neutral-900 dark:text-amber-50 relative overflow-hidden border-t border-amber-500/15 transition-colors duration-500">
       {/* Background Glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/5 rounded-full filter blur-[150px] pointer-events-none" />
 
@@ -47,16 +47,16 @@ export default function WeddingsBanquetsSection({ onOpenBookingWithData, onOpenB
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/30 text-amber-300 text-xs font-serif uppercase tracking-widest">
-            <Heart className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 dark:bg-amber-950/60 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-serif uppercase tracking-widest">
+            <Heart className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 fill-amber-500 dark:fill-amber-400" />
             <span>Grand Weddings & Celebrations</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-neutral-900 dark:text-white leading-tight">
             Crafting Unforgettable <span className="text-gold-metallic">Royal Marriages</span>
           </h2>
 
-          <p className="text-base text-amber-100/70 font-light leading-relaxed">
+          <p className="text-base text-neutral-700 dark:text-amber-100/70 font-light leading-relaxed">
             Turn your dream wedding into a fairytale royal saga. Piyush Palace is Gujarat’s premier destination wedding venue featuring sprawling lawns, regal decor, and legendary hospitality.
           </p>
         </div>
@@ -96,8 +96,8 @@ export default function WeddingsBanquetsSection({ onOpenBookingWithData, onOpenB
                   <Users className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-base font-semibold text-amber-200">Flexible Capacity (50 to 5,000 Guests)</h4>
-                  <p className="text-xs text-amber-100/70 mt-1">Whether an intimate family Mehendi or a 5,000-guest grand reception, our indoor halls & outdoor lawns adapt seamlessly.</p>
+                  <h4 className="font-serif text-base font-semibold text-neutral-950 dark:text-amber-200">Flexible Capacity (50 to 5,000 Guests)</h4>
+                  <p className="text-xs text-neutral-700 dark:text-amber-100/70 mt-1">Whether an intimate family Mehendi or a 5,000-guest grand reception, our indoor halls & outdoor lawns adapt seamlessly.</p>
                 </div>
               </div>
             </div>
@@ -108,8 +108,8 @@ export default function WeddingsBanquetsSection({ onOpenBookingWithData, onOpenB
                   <UtensilsCrossed className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-base font-semibold text-amber-200">Pure Vegetarian Gourmet Feast</h4>
-                  <p className="text-xs text-amber-100/70 mt-1">Authentic Gujarati Thali, Rajasthani Royal Feasts, North & South Indian delicacies prepared by master chefs.</p>
+                  <h4 className="font-serif text-base font-semibold text-neutral-950 dark:text-amber-200">Pure Vegetarian Gourmet Feast</h4>
+                  <p className="text-xs text-neutral-700 dark:text-amber-100/70 mt-1">Authentic Gujarati Thali, Rajasthani Royal Feasts, North & South Indian delicacies prepared by master chefs.</p>
                 </div>
               </div>
             </div>
@@ -120,8 +120,8 @@ export default function WeddingsBanquetsSection({ onOpenBookingWithData, onOpenB
                   <Music className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-base font-semibold text-amber-200">Complete Wedding Planning Support</h4>
-                  <p className="text-xs text-amber-100/70 mt-1">Bridal green rooms, grand Baraat procession pathway, stage mandap design, sound, lighting & 300+ car valet parking.</p>
+                  <h4 className="font-serif text-base font-semibold text-neutral-950 dark:text-amber-200">Complete Wedding Planning Support</h4>
+                  <p className="text-xs text-neutral-700 dark:text-amber-100/70 mt-1">Bridal green rooms, grand Baraat procession pathway, stage mandap design, sound, lighting & 300+ car valet parking.</p>
                 </div>
               </div>
             </div>
@@ -135,7 +135,7 @@ export default function WeddingsBanquetsSection({ onOpenBookingWithData, onOpenB
             <h3 className="font-serif text-2xl font-bold text-gold-metallic">
               Interactive Event Venue Recommender
             </h3>
-            <p className="text-xs text-amber-200/70 mt-1">
+            <p className="text-xs text-neutral-700 dark:text-amber-200/70 mt-1">
               Select your expected guest count to discover the perfect venue space at Piyush Palace
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function WeddingsBanquetsSection({ onOpenBookingWithData, onOpenB
                       className={`p-3 rounded-xl text-xs font-serif text-left transition-all ${
                         selectedEventType === type
                           ? "bg-gold-metallic text-black font-bold shadow-md"
-                          : "bg-black/50 text-amber-200 border border-amber-500/20 hover:border-amber-400"
+                          : "bg-white dark:bg-black/50 text-neutral-800 dark:text-amber-200 border border-amber-500/20 hover:border-amber-400"
                       }`}
                     >
                       {type}
@@ -185,7 +185,7 @@ export default function WeddingsBanquetsSection({ onOpenBookingWithData, onOpenB
                   onChange={(e) => setGuestCount(Number(e.target.value))}
                   className="w-full accent-amber-400 h-2 bg-neutral-800 rounded-lg cursor-pointer"
                 />
-                <div className="flex justify-between text-[10px] text-amber-200/60 mt-1">
+                <div className="flex justify-between text-[10px] text-neutral-600 dark:text-amber-200/60 mt-1">
                   <span>100 Guests</span>
                   <span>1,500 Guests</span>
                   <span>5,000 Guests</span>
@@ -195,17 +195,17 @@ export default function WeddingsBanquetsSection({ onOpenBookingWithData, onOpenB
             </div>
 
             {/* Right Recommendation Result Box */}
-            <div className="md:col-span-6 bg-amber-950/40 border border-amber-500/40 p-6 rounded-2xl text-center space-y-4">
-              <div className="inline-block px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-[10px] uppercase font-serif tracking-widest border border-amber-500/30">
+            <div className="md:col-span-6 bg-amber-500/5 dark:bg-amber-950/40 border border-amber-500/30 p-6 rounded-2xl text-center space-y-4">
+              <div className="inline-block px-3 py-1 rounded-full bg-amber-500/20 text-amber-800 dark:text-amber-300 text-[10px] uppercase font-serif tracking-widest border border-amber-500/30">
                 Recommended Venue Setting
               </div>
-              <h4 className="font-serif text-2xl font-bold text-white">
+              <h4 className="font-serif text-2xl font-bold text-neutral-950 dark:text-white">
                 {recommendation.venue}
               </h4>
-              <p className="text-xs text-amber-100/80 leading-relaxed font-light">
+              <p className="text-xs text-neutral-700 dark:text-amber-100/80 leading-relaxed font-light">
                 {recommendation.description}
               </p>
-              <div className="text-xs font-serif text-amber-300 font-semibold bg-black/40 py-2 rounded-lg border border-amber-500/20">
+              <div className="text-xs font-serif text-neutral-900 dark:text-amber-300 font-semibold bg-white dark:bg-black/40 py-2 rounded-lg border border-amber-500/20">
                 Ideal Capacity: {recommendation.capacity}
               </div>
 

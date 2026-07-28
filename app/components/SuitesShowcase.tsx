@@ -72,7 +72,7 @@ export default function SuitesShowcase({ onOpenBooking }: SuitesShowcaseProps) {
   const activeSuite = SUITES_DATA.find((s) => s.id === activeSuiteId) || SUITES_DATA[0];
 
   return (
-    <section id="suites" className="py-24 bg-[#0B0C10] relative overflow-hidden border-t border-amber-500/15">
+    <section id="suites" className="py-24 bg-[#FAF8F5] dark:bg-[#0B0C10] text-neutral-900 dark:text-amber-50 relative overflow-hidden border-t border-amber-500/15 transition-colors duration-500">
       {/* Background Radial Glow */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-500/5 rounded-full filter blur-[120px] pointer-events-none" />
 
@@ -80,16 +80,16 @@ export default function SuitesShowcase({ onOpenBooking }: SuitesShowcaseProps) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/30 text-amber-300 text-xs font-serif uppercase tracking-widest">
-            <Crown className="w-3.5 h-3.5 text-amber-400" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 dark:bg-amber-950/60 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-serif uppercase tracking-widest">
+            <Crown className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
             <span>Royal Accommodations</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-white">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-neutral-900 dark:text-white">
             Opulent Suites Designed for <span className="text-gold-metallic">Sovereign Comfort</span>
           </h2>
 
-          <p className="text-base text-amber-100/70 font-light leading-relaxed">
+          <p className="text-base text-neutral-700 dark:text-amber-100/70 font-light leading-relaxed">
             Every room at Piyush Palace is a masterpiece of royal heritage, featuring rich teak furnishings, fine silk tapestries, and state-of-the-art modern amenities.
           </p>
         </div>
@@ -150,21 +150,21 @@ export default function SuitesShowcase({ onOpenBooking }: SuitesShowcaseProps) {
                 <span className="text-xs uppercase tracking-widest text-amber-400 font-serif font-semibold">
                   {activeSuite.category}
                 </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mt-1">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-neutral-950 dark:text-white mt-1">
                   {activeSuite.name}
                 </h3>
-                <p className="text-xs sm:text-sm text-amber-100/70 font-light mt-3 leading-relaxed">
+                <p className="text-xs sm:text-sm text-neutral-700 dark:text-amber-100/70 font-light mt-3 leading-relaxed">
                   {activeSuite.description}
                 </p>
               </div>
 
               {/* Price Tag */}
-              <div className="p-4 rounded-2xl bg-amber-950/40 border border-amber-500/30 flex items-baseline gap-2">
-                <span className="text-xs text-amber-300 uppercase font-serif">Starting from</span>
+              <div className="p-4 rounded-2xl bg-amber-500/5 dark:bg-amber-950/40 border border-amber-500/25 flex items-baseline gap-2">
+                <span className="text-xs text-amber-700 dark:text-amber-300 uppercase font-serif">Starting from</span>
                 <span className="font-serif text-3xl font-bold text-gold-metallic">
                   {activeSuite.price}
                 </span>
-                <span className="text-xs text-amber-200/60 font-sans">{activeSuite.period}</span>
+                <span className="text-xs text-neutral-600 dark:text-amber-200/60 font-sans">{activeSuite.period}</span>
               </div>
 
               {/* Features List */}
@@ -172,10 +172,10 @@ export default function SuitesShowcase({ onOpenBooking }: SuitesShowcaseProps) {
                 <h4 className="text-xs uppercase font-serif tracking-wider text-amber-300 font-semibold">
                   Included Amenities & Privileges
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-amber-100/90">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-neutral-800 dark:text-amber-100/90">
                   {activeSuite.features.map((feat, idx) => (
-                    <div key={idx} className="flex items-center gap-2 bg-black/40 p-2 rounded-lg border border-amber-500/10">
-                      <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    <div key={idx} className="flex items-center gap-2 bg-[#FAF8F5] dark:bg-black/40 p-2 rounded-lg border border-amber-500/20 dark:border-amber-500/10">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" />
                       <span className="truncate">{feat}</span>
                     </div>
                   ))}

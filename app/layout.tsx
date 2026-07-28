@@ -29,7 +29,7 @@ export default function RootLayout({
       lang="en"
       className={`${cinzel.variable} ${plusJakartaSans.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-[#0B0C10] text-amber-50 font-sans selection:bg-amber-500 selection:text-black">
+      <body className="min-h-full flex flex-col bg-[#FAF8F5] dark:bg-[#0B0C10] text-[#1A1815] dark:text-amber-50 font-sans selection:bg-amber-500 selection:text-black transition-colors duration-500">
         {children}
       </body>
     </html>

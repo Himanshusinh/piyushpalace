@@ -35,7 +35,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-8">
         
         {/* Royal Crest Badge */}
-        <div className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full royal-glass-card border border-amber-500/40 text-amber-300 text-xs sm:text-sm tracking-[0.2em] font-serif uppercase mb-6 shadow-2xl animate-pulse-slow">
+        <div className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full royal-dark-glass-card border border-amber-500/40 text-amber-300 text-xs sm:text-sm tracking-[0.2em] font-serif uppercase mb-6 shadow-2xl animate-pulse-slow">
           <Crown className="w-4 h-4 text-amber-400" />
           <span>✦ 7-Acre Sovereign Palacial Resort & Convention ✦</span>
         </div>
@@ -56,7 +56,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
         </p>
 
         {/* Interactive Quick Reservation / Inquiry Ribbon */}
-        <div className="mt-10 max-w-4xl mx-auto royal-glass-card p-3 sm:p-4 rounded-2xl sm:rounded-full border border-amber-500/30 shadow-2xl backdrop-blur-2xl">
+        <div className="mt-10 max-w-4xl mx-auto royal-dark-glass-card p-3 sm:p-4 rounded-2xl sm:rounded-full border border-amber-500/30 shadow-2xl backdrop-blur-2xl">
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 items-center">
             {/* Event / Stay Selector */}
             <div className="bg-black/40 border border-amber-500/20 rounded-xl sm:rounded-full px-4 py-2.5 text-left">
@@ -134,7 +134,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
 
         {/* Stats Grid Bar */}
         <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto">
-          <div className="royal-glass-card p-4 sm:p-6 rounded-2xl text-center border-t-2 border-t-amber-400">
+          <div className="royal-dark-glass-card p-4 sm:p-6 rounded-2xl text-center border-t-2 border-t-amber-400">
             <span className="font-serif text-3xl sm:text-4xl font-bold text-gold-metallic block">
               7+ Acres
             </span>
@@ -143,7 +143,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
             </span>
           </div>
 
-          <div className="royal-glass-card p-4 sm:p-6 rounded-2xl text-center border-t-2 border-t-amber-400">
+          <div className="royal-dark-glass-card p-4 sm:p-6 rounded-2xl text-center border-t-2 border-t-amber-400">
             <span className="font-serif text-3xl sm:text-4xl font-bold text-gold-metallic block">
               5,000
             </span>
@@ -152,7 +152,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
             </span>
           </div>
 
-          <div className="royal-glass-card p-4 sm:p-6 rounded-2xl text-center border-t-2 border-t-amber-400">
+          <div className="royal-dark-glass-card p-4 sm:p-6 rounded-2xl text-center border-t-2 border-t-amber-400">
             <span className="font-serif text-3xl sm:text-4xl font-bold text-gold-metallic block">
               27+
             </span>
@@ -161,7 +161,7 @@ export default function HeroSection({ onOpenBooking }: HeroSectionProps) {
             </span>
           </div>
 
-          <div className="royal-glass-card p-4 sm:p-6 rounded-2xl text-center border-t-2 border-t-amber-400">
+          <div className="royal-dark-glass-card p-4 sm:p-6 rounded-2xl text-center border-t-2 border-t-amber-400">
             <div className="flex items-center justify-center gap-1 text-amber-400 mb-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-4 h-4 fill-amber-400" />
